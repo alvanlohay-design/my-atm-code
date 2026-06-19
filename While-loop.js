@@ -1,7 +1,7 @@
 let pin=prompt("Enter your pin");
 while(pin !="1234"){
     alert("Incorrect pin");
-    pin=prompt("Try again")
+    pin=prompt("Enter pin again")
 }
 alert("Welcome to the bank Alvan");
 let balance=5000;
@@ -14,7 +14,7 @@ if (withdrawal<=balance&&withdrawal>0){
     alert("Your remaning balance is " +balance);
 }
 else if(withdrawal>balance||withdrawal<0){
-    alert("Write the correct amount");
+    alert("Enter a valid amount");
     withdrawal=Number(prompt("How much do you want to withdraw?"));
     balance=balance-withdrawal;
     alert("Withdrawal successful");
