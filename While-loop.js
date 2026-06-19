@@ -16,6 +16,10 @@ if (withdrawal<=balance&&withdrawal>0){
 else if(withdrawal>balance||withdrawal<0){
     alert("Write the correct amount");
     withdrawal=Number(prompt("How much do you want to withdraw?"));
+    balance=balance-withdrawal;
+    alert("Withdrawal successful");
+    alert("You withdrew "+withdrawal);
+    alert("Your remaning balance is " +balance);
 }
 else{
     alert("Insufficient money or invalid amount");
